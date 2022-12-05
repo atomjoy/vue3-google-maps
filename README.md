@@ -50,3 +50,6 @@ components/map/google/examples
   component: () => import('../components/map/google/examples/MapPolygonDrawView.vue'),
 },
 ```
+
+### Map Marker
+<img src="https://raw.githubusercontent.com/atomjoy/vue3-google-maps/main/map.png" width="100%">
