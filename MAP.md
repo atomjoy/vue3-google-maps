@@ -1,4 +1,6 @@
-# Przykłady
+# Google map przykłady
+
+Eventy, funkcje...
 
 ## Funkcje
 
@@ -93,5 +95,10 @@ google.maps.event.addListener(map, 'click', (e) => {
 google.maps.event.addListener(polygon, 'click', (e) => {
 	const contain = google.maps.geometry.poly.containsLocation(e.latLng, polygon) ? true : false
 	console.log(contain)
+})
+
+// Marker event
+marker.addListener('click', () => {
+	infowindow.open({ anchor: marker, map: map })
 })
 ```
