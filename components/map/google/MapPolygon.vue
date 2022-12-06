@@ -37,6 +37,14 @@ const props = defineProps({
 			{ lat: 50.87919131500943, lng: 19.793808180377113 },
 		],
 	},
+	polygon_details: {
+		default: {
+			name: 'Food World',
+			phone: '+(00) 000 000 000',
+			email: 'email@email.wow',
+			cost: 5.99,
+		},
+	},
 })
 
 let map = null
@@ -44,6 +52,7 @@ let icon = null
 let marker = null
 let infowindow = null
 let polygon = null
+let popups = []
 
 // If polygon includes location point
 function isContainLocation(event, polygon) {
@@ -130,10 +139,30 @@ onMounted(() => {
 			strokeColor: props.color,
 			strokeOpacity: 0.8,
 			strokeWeight: 2,
+			details: props.polygon_details,
 		})
 
 		// Set polygon on map
 		polygon.setMap(map)
+
+		// Polygon popup
+		google.maps.event.addListener(polygon, 'click', (e) => {
+			popups.forEach((i) => {
+				i.close()
+			})
+			// Info window
+			const iwp = new google.maps.InfoWindow({
+				ariaLabel: 'Delivery',
+			})
+			// Add to array
+			popups.push(iwp)
+			// Info window html
+			const html = '<div class="poly-popup">Cost: ' + polygon.details.cost + '<br> Name: ' + polygon.details.name + '<br> Phone: ' + polygon.details.phone + '<br> Email: ' + polygon.details.email + '<br> Location: ' + e.latLng.toUrlValue(6) + '</div>'
+			// Dodaj do infowindow i wyświetl popup
+			iwp.setContent(html)
+			iwp.setPosition(e.latLng)
+			iwp.open(map)
+		})
 	})
 })
 </script>
