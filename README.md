@@ -5,15 +5,17 @@ Jak utworzyć marker z popup, poligonu lub marker po kliknięciu w Google map w 
 ## Instalacja google api (mini)
 
 ```sh
-# Add in packages.json in dependencies:
+# 1. Add in packages.json in dependencies:
 "@googlemaps/js-api-loader": "^1.16.6"
 
-# Copy map dir files to resources/js/map
+# 2. Copy map dir files to resources/js/map
 # Logo public: /default/logo.svg
 # Marker public: /default/map/google-marker.png
+
+# 3. And just import and add <Map /> in vue template
 ```
 
-## Przekopiuj katalog z komponentami (old)
+## Przekopiuj katalog z komponentami (old samples)
 
 ```sh
 components/map/google
