@@ -1,11 +1,12 @@
-# Vue3 Google Maps komponenty
+# Vue3 Google Maps Component
 
 Jak utworzyć marker z popup, poligonu lub marker po kliknięciu w Google map w Vue3.
 
 ### Instalacja google api
 
 ```sh
-npm i @googlemaps/js-api-loader
+Add in packages.json in dependencies:
+"@googlemaps/js-api-loader": "^1.16.6"
 ```
 
 ### Przekopiuj katalog z komponentami
