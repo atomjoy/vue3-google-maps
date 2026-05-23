@@ -2,15 +2,15 @@
 
 Jak utworzyć marker z popup, poligonu lub marker po kliknięciu w Google map w Vue3.
 
-## Api key
+### Api key .env
 
 Set in .env file (works without key in dev version).
 
 ```env
-VITE_GMAP_KEY=
+VITE_GMAP_KEY=""
 ```
 
-## Instalacja google api (mini)
+## Install google map (simple 3 steps)
 
 ```sh
 # 1. Add in packages.json in dependencies:
@@ -23,25 +23,13 @@ VITE_GMAP_KEY=
 # 3. And just import and add <Map /> in vue template
 ```
 
-## Przekopiuj katalog z komponentami (old samples)
-
-```sh
-components/map/google
-```
-
-### Dodaj klucz do api w pliku vite .env
-
-```sh
-VITE_GMAP_KEY=""
-```
-
-### Przykłady w katalogu
+## Examples
 
 ```sh
 components/map/google/examples
 ```
 
-### Dodaj przykłady do routera
+### Add routes
 
 ```js
 {
