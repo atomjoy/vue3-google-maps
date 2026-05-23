@@ -1,0 +1,23 @@
+{
+    "email": "email@example.com",
+    "mobile": "+41 000 600 700",
+    "company": "Company",
+    "city": "00-100 Warsaw",
+    "address": "Platynowa 123",
+    "instagram_user": "username",
+    "facebook_user": "username",
+    "youtube_user": "username",
+    "twitter_user": "username",
+    "marker": {
+        "lat": 52.2298,
+        "lng": 21.0117,
+        "title": "Company",
+        "about": "About company",
+        "email": "email@example.com",
+        "mobile": "+41 000 600 700",
+        "website_url": "https://example.com/username",
+        "website_txt": "See More",
+        "zoom": 12,
+        "scrollwheel": false
+    }
+}
