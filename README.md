@@ -1,6 +1,6 @@
 # Vue3 Google Maps Component
 
-Jak utworzyć marker z popup, poligonu lub marker po kliknięciu w Google map w Vue3.
+How to create a marker from a popup, polygon or marker on click in Google maps in Vue3.
 
 ### Api key .env
 
