@@ -5,8 +5,12 @@ Jak utworzyć marker z popup, poligonu lub marker po kliknięciu w Google map w 
 ### Instalacja google api
 
 ```sh
-Add in packages.json in dependencies:
+# Add in packages.json in dependencies:
 "@googlemaps/js-api-loader": "^1.16.6"
+
+# Copy dir **map** dir files to **resources/js/map**
+# Logo public: **/default/logo.svg**
+# Marker public: **/default/map/google-marker.png**
 ```
 
 ### Przekopiuj katalog z komponentami
