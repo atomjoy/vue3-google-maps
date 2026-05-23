@@ -23,7 +23,7 @@ VITE_GMAP_KEY=""
 # 3. And just import and add <Map /> in vue template
 ```
 
-## Examples
+## Examples (old)
 
 ```sh
 components/map/google/examples
