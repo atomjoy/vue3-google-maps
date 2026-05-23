@@ -2,7 +2,7 @@
 
 Jak utworzyć marker z popup, poligonu lub marker po kliknięciu w Google map w Vue3.
 
-### Instalacja google api
+## Instalacja google api (mini)
 
 ```sh
 # Add in packages.json in dependencies:
@@ -13,7 +13,7 @@ Jak utworzyć marker z popup, poligonu lub marker po kliknięciu w Google map w 
 # Marker public: /default/map/google-marker.png
 ```
 
-### Przekopiuj katalog z komponentami
+## Przekopiuj katalog z komponentami (old)
 
 ```sh
 components/map/google
