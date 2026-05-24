@@ -1,6 +1,6 @@
 # Vue3 Google Maps Component
 
-How to create a marker from a popup, polygon or marker on click in Google maps in Vue3.
+How to create a popup map marker or polygon in Google Maps in Vue3.
 
 ### Api key .env
 
@@ -10,13 +10,14 @@ Set in .env file (works without key in dev version).
 VITE_GMAP_KEY=""
 ```
 
-## Install google map (simple 3 steps)
+## Install google map (map marker popup)
 
 ```sh
 # 1. Add in packages.json in dependencies:
 "@googlemaps/js-api-loader": "^1.16.6"
 
 # 2. Copy map dir files to resources/js/map
+# Edit popup: /map/settings.json
 # Logo public: /default/logo.svg
 # Marker public: /default/map/google-marker.png
 
